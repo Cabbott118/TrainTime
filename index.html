@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Abbott's Train Depot</title>
+</head>
+​
+
+<body>
+    ​<div class="row">
+        <div class="col xs-12 col-sm-12">
+            <div class="jumbotron">
+                <h1>Abbott's Train Depot</h1>
+                <p id="currentTime"></p>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <div class="container"> -->
+        <div class="row container-wrap mainTrainRow">
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Add Train</h3>
+                        <div>
+                            <div class="panel-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label class="firstRow">Train Name</label>
+                                        <input type="text" class="form-control form-field" id="trainName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="firstRow">Destination</label>
+                                        <input type="text" class="form-control form-field" id="destination">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="firstRow">Train Start Time (HH:mm): </label>
+                                        <input type="text" class="form-control form-field" id="trainStart">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="firstRow">Frequency (mins)</label>
+                                        <input type="text" class="form-control form-field" id="frequency">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary" id="submit">Add Train</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Train Information Board</h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table" id="trainField">
+                            <thead>
+                                <tr>
+                                    <th>Train Name</th>
+                                    <th>Destination</th>
+                                    <th>Frequency</th>
+                                    <th>Next Arrival</th>
+                                    <th>Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody id="trainFieldRows">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    <!-- </div> -->
+    <script src="assets/javascript/app.js"></script>
+</body>
+​
+
+</html>

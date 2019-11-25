@@ -1,0 +1,33 @@
+body {
+    background-image: url("../images/background.jpg");
+}
+
+.jumbotron {
+    background: rgba(0, 0, 0, .5);
+}
+
+#currentTime {
+    color: white;
+    font-size: 24px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.mainTrainRow {
+    color: white;
+    background: rgba(0, 0, 0, .5);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+th {
+    color: white;
+}
+
+tr {
+    color: white;
+}
